@@ -1,7 +1,8 @@
 
-<h1 align='center'> <img width=32 src='https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/stopwatch.png'> Stopwatch</h1>
+<h1 align='center'> <img width=32 src='https://www.shareicon.net/data/2016/05/26/771240_time_512x512.png'> Stopwatch</h1>
 <p align='center'>
-    <img src='https://github.com/besnoi/pyApps/blob/main/_img/stopwatch.JPG'>
+    <img src='https://github.com/besnoi/pyApps/blob/main/_img/stopwatch.png'><br>
+    A Simple Stopwatch program with Tkinter
 </p>
 
 ## Installation
