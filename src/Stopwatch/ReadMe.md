@@ -5,6 +5,10 @@
     A Simple Stopwatch program with Tkinter
 </p>
 
+## Synopsis
+
+Click on start to start the stopwatch, stop to pause and restart to reset it back to zero
+
 ## Installation
 
 Install the [requirements](#requirements)
@@ -23,4 +27,4 @@ Click here to [Download Stopwatch](https://downgit.github.io/#/home?url=https://
 
 ## License
 
-See [LICENSE](https://github.com/besnoi/pyApps/blob/main/LICENSE) for pyApps and also check the license for the packages used if you are serious about commercial app deployment
+See [LICENSE](https://github.com/besnoi/pyApps/blob/main/LICENSE) for more information
