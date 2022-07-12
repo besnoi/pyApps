@@ -54,7 +54,7 @@ def initApp():
     date['text'] = 'Last Update: '+datetime.fromtimestamp(response['timestamp']).strftime("%d-%m-%Y")
 
 def updateBaseRate():
-    baseRate['text'] = "1 %s = %f %s"%(fromC.get(),rates[toC.get()],toC.get())
+    baseRate['text'] = "1 %s = %f %s"%(fromC.get(),rates[toC.get()]/rates[fromC.get()],toC.get())
 
 '''Flips/Swaps Currencies'''
 def flip():
