@@ -1,7 +1,7 @@
 
-<h1 align='center'> <img width=32 src='https://icon-library.com/images/icon-dollar/icon-dollar-2.jpg'> Speech Synthesizer</h1>
+<h1 align='center'> <img width=32 src='https://cdn2.iconfinder.com/data/icons/mulitmedia/256/15-512.png'> Speech Synthesizer</h1>
 <p align='center'>
-    <img src='https://github.com/besnoi/pyApps/blob/main/_img/stopwatch.png'><br>
+    <img src='https://github.com/besnoi/pyApps/blob/main/_img/speech_synthesizer.PNG'><br>
     A over-simplified Voice Synthesizer
 </p>
 
