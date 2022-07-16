@@ -19,7 +19,7 @@ pip install customtkinter
 
 ## Download
 
-Click here to [Download Snipping Tool](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/master/src/Snipping%20Tool)
+Click here to [Download Snipping Tool](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Snipping%20Tool)
 
 ## Requirements
 - pygame
