@@ -19,7 +19,7 @@ pip install sv_ttk
 
 ## Download
 
-Click here to [Download Stopwatch](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/master/src/Stopwatch)
+Click here to [Download Stopwatch](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Stopwatch)
 
 ## Requirements
 - tkextrafont
