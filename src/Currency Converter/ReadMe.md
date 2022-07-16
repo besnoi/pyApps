@@ -21,7 +21,7 @@ pip install sv_ttk
 
 ## Download
 
-Click here to [Download Currency Converter](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/master/src/Currency%20Converter)
+Click here to [Download Currency Converter](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Currency%20Converter)
 
 ## Requirements
 - requests
