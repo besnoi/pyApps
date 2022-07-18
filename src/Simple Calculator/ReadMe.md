@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png'> Simple Calculator</h1>
 <p align='center'>
-    <img src='../../_img/qr_code_generator.PNG'><br/>
+    <img src='../../_img/simple_calculator.PNG'><br/>
     A working Calculator with Tkinter 
 </p>
 
