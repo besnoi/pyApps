@@ -19,7 +19,7 @@ pip install sv_ttk
 
 ## Download
 
-Click here to [Download Snipping Tool](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Snipping%20Tool)
+Click here to [Download QR-Code Generator](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/QR%20Code%20Generator)
 
 ## Requirements
 - qrcode
