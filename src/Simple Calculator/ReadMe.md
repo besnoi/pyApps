@@ -17,10 +17,6 @@ Just run the [main](main.py) with python
 
 Click here to [Download Simple Calculator](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Simple%20Calculator)
 
-## Requirements
-- qrcode
-- sv_ttk
-
 ## License
 
 See [LICENSE.MD](../../LICENSE.MD) for more information
