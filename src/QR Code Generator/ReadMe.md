@@ -1,5 +1,5 @@
 
-<h1 align='center'> <img width=32 src='https://static.wikia.nocookie.net/computer-software-and-video-games/images/9/94/Snipping_Tool_10_Icon.png/revision/latest?cb=20170128223105'> QR-Code Generator</h1>
+<h1 align='center'> <img width=32 src='https://play-lh.googleusercontent.com/jAqOWRINkz4-flQnqfofqJZ2-NQzPI50U3tHgfpHBa8GXlzyayetgkgoqAXK47iqoeVj'> QR-Code Generator</h1>
 <p align='center'>
     <img src='../../_img/qr_code_generator.PNG'><br/>
     A working QR-Code Generator with Tkinter 
