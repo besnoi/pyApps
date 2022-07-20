@@ -14,6 +14,7 @@ Select the mode of screenshot (fullscreen or region), set delay and take your sn
 Install the [requirements](#requirements)
 ```bash
 pip install pygame
+pip install pyautogui
 pip install customtkinter
 ```
 
@@ -23,6 +24,7 @@ Click here to [Download Snipping Tool](https://downgit.github.io/#/home?url=http
 
 ## Requirements
 - pygame
+- pyautogui
 - customtkinter
 
 ## Contribution
