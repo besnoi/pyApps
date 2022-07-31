@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='metro.ico'> Delhi Metro App</h1>
 <p align='center'>
-    <img src='../_img/delhi_metro.png'><br>
+    <img src='../../_img/delhi_metro.PNG'><br>
     Delhi Metro App
 </p>
 
