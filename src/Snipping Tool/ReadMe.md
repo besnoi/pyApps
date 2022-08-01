@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='https://static.wikia.nocookie.net/computer-software-and-video-games/images/9/94/Snipping_Tool_10_Icon.png/revision/latest?cb=20170128223105'> Snipping Tool</h1>
 <p align='center'>
-    <img src='../../_img/snipping_tool.png'><br/>
+    <img src='../../_img/snipping_tool.PNG'><br/>
     A fully-functional Snipping Tool with Tkinter 
 </p>
 
