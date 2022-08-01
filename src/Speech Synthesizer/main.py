@@ -14,6 +14,7 @@
 
 import tkinter
 from customtkinter import *
+import customtkinter
 import pyttsx3
 
 def synthesize():
@@ -40,13 +41,17 @@ def getVoice():
             return engine.getProperty('voices')[i].id
         i = i + 1
 
-
 ### Init Window
+
+
+# Set theme
+customtkinter.set_appearance_mode("Dark")
+
 
 win = CTk()
 win.title("Speech Synthesizer")
 win.attributes("-alpha", 0.90)
-win.geometry("405x400")
+win.geometry("370x400")
 win.resizable(False, False)
 
 ### Init Layout
@@ -54,17 +59,17 @@ win.resizable(False, False)
 rate  = tkinter.IntVar(value=180)
 volume  = tkinter.DoubleVar(value=2)
 voice = tkinter.StringVar(win,value=voices[0])
-CTkOptionMenu(master=win, values=voices, variable=voice).grid(row=0,padx=30,column=0,columnspan=2,pady=17,sticky='we')
+CTkOptionMenu(master=win, values=voices, variable=voice).grid(row=0,padx=15,column=0,columnspan=2,pady=17,sticky='we')
 
-CTkLabel(master=win,text='Volume:').grid(row=1,column=0,pady=10)
-CTkSlider(master=win,from_=0,to=3,number_of_steps=20,variable=volume).grid(row=1,column=1,padx=30,pady=10,sticky='nwe')
+CTkLabel(master=win,text='Volume:').grid(row=1,column=0,pady=10,sticky='e')
+CTkSlider(master=win,from_=0,to=3,number_of_steps=20,variable=volume).grid(row=1,column=1,padx=15,pady=10,sticky='nwe')
 
-CTkLabel(master=win,text='Rate:').grid(row=2,column=0,pady=10)
-CTkSlider(master=win,from_=1,to=400,number_of_steps=50,variable=rate).grid(row=2,column=1,padx=30,pady=10,sticky='nwe')
+CTkLabel(master=win,text='Rate:').grid(row=2,column=0,padx=0,pady=10,sticky='we')
+CTkSlider(master=win,from_=1,to=400,number_of_steps=50,variable=rate).grid(row=2,column=1,padx=15,pady=10,sticky='nwe')
 
 text=CTkEntry(master=win,height=150,placeholder_text="\t\t   Your text here")
-text.grid(row=3,column=0,columnspan=2,padx=30,pady=10,sticky='we')
-CTkButton(master=win, text="Convert to Speech", height=48, command=synthesize).grid(row=4,padx=30,column=0,columnspan=2,pady=10,sticky='we')
+text.grid(row=3,column=0,columnspan=2,padx=15,pady=10,sticky='we')
+CTkButton(master=win, text="Convert to Speech", height=48, command=synthesize).grid(row=4,padx=15,column=0,columnspan=2,pady=10,sticky='we')
 
 win.mainloop()
 engine.stop()
