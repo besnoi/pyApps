@@ -14,7 +14,6 @@
 
 import tkinter
 from customtkinter import *
-import customtkinter
 import pyttsx3
 
 def synthesize():
@@ -45,8 +44,7 @@ def getVoice():
 
 
 # Set theme
-customtkinter.set_appearance_mode("Dark")
-
+set_appearance_mode("Dark")
 
 win = CTk()
 win.title("Speech Synthesizer")
