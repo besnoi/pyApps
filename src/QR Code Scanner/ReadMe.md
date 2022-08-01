@@ -2,7 +2,7 @@
 <h1 align='center'> <img width=32 src='qrcode.ico'> QR-Code Scanner</h1>
 <p align='center'>
     <img src='../../_img/qr_code_scanner.PNG'><br>
-    A Simple yet Sophisticated QR-Scanner with PyQT5
+    A primitive QR-Scanner with PyQT5 & Open-CV (<i>wifi-link demonstration</i>)
 </p>
 
 ## Synopsis
