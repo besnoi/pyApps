@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='https://www.mestel.com/wp-content/uploads/2017/06/dollar-icon-png-3547.png'> Currency Converter</h1>
 <p align='center'>
-    <img src='https://github.com/besnoi/pyApps/blob/main/_img/currency_converter.png'><br>
+    <img src='../../_img/currency_converter.PNG'><br>
     A real-time currency converter (<em>works offline too</em>)
 </p>
 
