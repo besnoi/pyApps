@@ -19,6 +19,8 @@ import time
 from tkinter import filedialog
 from customtkinter import *
 
+set_appearance_mode("Dark") 
+
 win = CTk()
 win.title("Snipping Tool")
 win.attributes("-alpha", 0.90)
