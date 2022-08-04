@@ -1,4 +1,18 @@
-# importing required libraries
+'''
+    Wordlist Generator with PyQt5 / Neir
+    
+    Part of 100 GUI Apps Challenge
+    (https://github.com/besnoi/pyApps)
+
+    Challenge Rules :
+        1. App must be useful
+        2. App must be beautiful
+        3. App must be short (<500 LOC)
+    
+    And lastly no Plagiarism :D
+'''
+
+
 from PyQt5.Qt import *
 import sys
 import qdarktheme
