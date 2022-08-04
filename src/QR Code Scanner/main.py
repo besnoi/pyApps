@@ -51,7 +51,6 @@ class MainWindow(QWidget):
         super().__init__(*args, **kwargs)
         self.setWindowTitle('QR Code Scanner')
         self.setWindowIcon(QIcon('qrcode.ico'))
-        qt_material.apply_stylesheet(app, theme='dark_blue.xml')
 
         self.path = self.link = ''
 
@@ -115,7 +114,6 @@ class MainWindow(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    stylesheet = app.styleSheet()
-    app.setStyleSheet(stylesheet + '.primary{color: QTMATERIAL_SECONDARYCOLOR;background-color: black;}')
+    qt_material.apply_stylesheet(app, theme='dark_blue.xml')
     w = MainWindow()
     sys.exit(app.exec_())
