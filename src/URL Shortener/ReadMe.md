@@ -1,5 +1,5 @@
 
-<h1 align='center'> <img width=32 src='TODO.ico'> URL Shortener</h1>
+<h1 align='center'> <img width=32 src='https://i.ibb.co/WVx3JVr/image-removebg-preview.png'> URL Shortener</h1>
 <p align='center'>
     <img src='../../_img/url_shortener.PNG'><br>
     A Simple URL-Shortener with Tkinter
