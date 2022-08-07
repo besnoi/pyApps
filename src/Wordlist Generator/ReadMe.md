@@ -57,6 +57,10 @@ Click here to [Download Wordlist Generator](https://downgit.github.io/#/home?url
 - PyQt5
 - qdarktheme
 
+## Caveats
+
+Since I wrote the program in like 2-3 hours, there are bound to be (and infact must be) some thread-related errors. So please be wary of that and any conributions to fix these bugs are most welcome
+
 ## License
 
 See [LICENSE](https://github.com/besnoi/pyApps/blob/main/LICENSE) for more information
