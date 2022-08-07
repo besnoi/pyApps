@@ -2,7 +2,7 @@
 <h1 align='center'> <img width=32 src='fuzzer.ico'> URL Fuzzer</h1>
 <p align='center'>
     <img src='../../_img/url_fuzzer.PNG'><br>
-    A Simple Notepad application with PyQT5
+    A Simple URL Fuzzer with PyQT5
 </p>
 
 ## Synopsis
