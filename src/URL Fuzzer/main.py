@@ -114,7 +114,7 @@ class MainWindow(QWidget):
             result = ''
             for i in range(self.urlList.count()):
                 result+=self.urlList.item(i).text()+'\n'
-            path = QFileDialog.getSaveFileName(self, "Save Wordlist", "../", "Text File(*.txt);;ALL(*, *)",
+            path = QFileDialog.getSaveFileName(self, "Export Results", "../", "Text File(*.txt);;ALL(*, *)",
                                                "Text File(*.txt)", )[0]
             try:
                 if len(path) > 5:
