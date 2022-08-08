@@ -1,7 +1,6 @@
-
 <h1 align='center'> <img width=32 src='crawler.ico'> Web Crawler</h1>
 <p align='center'>
-    <img src='../../_img/url_fuzzer.PNG'><br>
+    <img src='../../_img/web_crawler.PNG'><br>
     A Simple Web Crawler application with PyQT5 & BeautifulSoup
 </p>
 
@@ -13,7 +12,7 @@ Enter a URL to scan, a depth and the app will crawl all the links it can find ba
 
 Install the [requirements](#requirements)
 ```bash
-pip install BeautifulSoup
+pip install bs4
 pip install PyQt5
 pip install qdarkstyle
 pip install pyperclip
