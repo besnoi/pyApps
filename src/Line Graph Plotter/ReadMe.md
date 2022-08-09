@@ -21,7 +21,7 @@ pip install qdarktheme
 
 ## Download
 
-Click here to [Download Simple Calculator](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Line%20Graph%20Plotter)
+Click here to [Download Line Graph Plotter](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Line%20Graph%20Plotter)
 
 ## Requirements
 - PySide6
