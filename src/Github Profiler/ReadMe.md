@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='https://cdn.iconscout.com/icon/free/png-256/github-2690381-2232884.png'> Github Profiler</h1>
 <p align='center'>
-    <img src='../../_img/line_graph_plotter.PNG'><br/>
+    <img src='../../_img/github_profiler.PNG'><br/>
     A simple Github Profiler with PySide6
 </p>
 
