@@ -25,9 +25,9 @@ Click here to [Download QR-Code Generator](https://downgit.github.io/#/home?url=
 - qrcode
 - sv_ttk
 
-## TODO
+## Caveats
 
-Add some method to copy image to clipboard
+I couldn't come up with a platform-independent method to copy image to the OS's clipboard. It's easier for strings than for raw data I presume
 
 ## License
 
