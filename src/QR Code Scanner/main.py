@@ -101,7 +101,7 @@ class MainWindow(QWidget):
             self.result.setStyleSheet('border-radius:25px;background-color:rgb(90,90,90,90);padding:6px')
     def openLink(self):
         if self.link=='':
-            QMessageBox.critical(win, "Error!", "No QR-Code found in the image")
+            QMessageBox.critical(self, "Error!", "No QR-Code found in the image")
         else:
             webbrowser.open(self.link)
     def copyLink(self):
