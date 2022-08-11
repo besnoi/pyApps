@@ -15,6 +15,7 @@ Install the [requirements](#requirements)
 ```bash
 pip install PyQt5
 pip install qdarkstyle
+pip install whois
 ```
 
 ## Download
@@ -24,6 +25,7 @@ Click here to [Download Whois Lookup](https://downgit.github.io/#/home?url=https
 ## Requirements
 - PyQt5
 - qdarkstyle
+- whois
 
 ## License
 
