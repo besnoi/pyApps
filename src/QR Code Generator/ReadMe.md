@@ -25,6 +25,10 @@ Click here to [Download QR-Code Generator](https://downgit.github.io/#/home?url=
 - qrcode
 - sv_ttk
 
+## TODO
+
+Add some method to copy image to clipboard
+
 ## License
 
 See [LICENSE.MD](../../LICENSE.MD) for more information
