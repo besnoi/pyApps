@@ -1,5 +1,5 @@
 '''
-    Github Profiler with PyQt5 / Neir
+    Github Profiler with PySide6 / Neir
     
     Part of 100 GUI Apps Challenge
     (https://github.com/besnoi/pyApps)
