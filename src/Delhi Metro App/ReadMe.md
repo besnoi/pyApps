@@ -14,6 +14,7 @@ A simple app to get the route, interchange points and travel time to help you in
 Install the [requirements](#requirements)
 ```bash
 pip install ttkthemes
+pip install requests
 ```
 
 ## Download
@@ -22,6 +23,7 @@ Click here to [Download Delhi Metro App](https://downgit.github.io/#/home?url=ht
 
 ## Requirements
 - ttkthemes
+- requests
 
 ## Caveats
 
