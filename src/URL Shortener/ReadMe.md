@@ -14,6 +14,8 @@ Just enter the long url to shorten, select the service/API and hit Shorten
 Install the [requirements](#requirements)
 ```bash
 pip install customtkinter
+pip install pyperclip
+pip install requests
 ```
 
 ## Download
@@ -22,6 +24,8 @@ Click here to [Download URL Shortener](https://downgit.github.io/#/home?url=http
 
 ## Requirements
 - customtkinter
+- pyperclip
+- requests
 
 ## License
 
