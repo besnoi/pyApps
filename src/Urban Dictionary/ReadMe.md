@@ -7,7 +7,7 @@
 
 ## Synopsis
 
-Enter a URL to scan, a depth and the app will crawl all the links it can find based on the depth  
+The app gives you all the definitions for a given word straight from the Urban Dictionary API 
 
 ## Installation
 
