@@ -1,5 +1,5 @@
 '''
-    Whois Domain Lookup with PyQt5 & BeautifulSoup / Neir
+    Whois Domain Lookup with PyQt5 / Neir
     
     Part of 100 GUI Apps Challenge
     (https://github.com/besnoi/pyApps)
