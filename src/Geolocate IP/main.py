@@ -31,6 +31,7 @@ class MainWindow(QWidget):
         self.setWindowIcon(QIcon('icon.png'))
         self.handler=ipinfo.getHandler(API_ACCESS_TOKEN)
         self.info = None # domain obj from whois
+        self.mapdata = None
         self.timer = QTimer()
         self.process = None # thread
 
@@ -73,18 +74,20 @@ class MainWindow(QWidget):
         return i
     def lookup(self):
         # domain obj has not yet been received from the API, so return
-        if not self.info:
+        if not self.info or not self.mapdata:
             return
         self.timer.stop()
         # TODO check if there is no internet connection
-        if not self.info.ip:
+        if  not self.info.ip:
             return QMessageBox.critical(self,'Error','Invalid IP Address')
         self.layout = QGridLayout()
         frame=QFrame()
         frame.setLayout(self.layout)
-        self.layout.addWidget(self.webview, 0,0,1,4)
-        self.webview.setHtml(self.mapdata.getvalue().decode())
+        self.layout.addWidget(self.webview, 0,0,1,6)
+        self.webview.setHtml(self.mapdata)
         i = 1
+        if self.entry.text().strip()=='':
+            self.entry.setText(self.info.ip)
         i=self.addRecord(i,'IP:',self.info.ip)
         i=self.addRecord(i,'City:',self.info.city)
         i=self.addRecord(i,'Region:',self.info.region)
@@ -97,14 +100,15 @@ class MainWindow(QWidget):
     def getIPInfo(self,ip):
         self.info=self.handler.getDetails(ip)
         m = folium.Map(
-        	tiles='IP Location',
-        	zoom_start=13,
+        	tiles='Stamen Terrain',
+        	zoom_start=10,
         	location=(self.info.latitude, self.info.longitude)
         )
 
         # save map data to data object
-        self.mapdata = io.BytesIO()
-        m.save(self.mapdata, close_file=False)
+        mapdata = io.BytesIO()
+        m.save(mapdata, close_file=False)
+        self.mapdata=mapdata.getvalue().decode()
 
         self.process = None
     def onLookup(self):
@@ -114,7 +118,7 @@ class MainWindow(QWidget):
         url=self.entry.text()
         self.process = Thread(target=self.getIPInfo, args=[url])
         self.process.start()
-        self.timer.start(100)
+        self.timer.start(500)
         self.timer.timeout.connect(self.lookup)
 
 if __name__ == '__main__':
