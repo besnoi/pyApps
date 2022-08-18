@@ -1,3 +1,17 @@
+'''
+    Icon Converter with PySide6 / Neir
+    
+    Part of 100 GUI Apps Challenge
+    (https://github.com/besnoi/pyApps)
+
+    Challenge Rules :
+        1. App must be useful
+        2. App must be beautiful
+        3. App must be short (<500 LOC)
+    
+    And lastly no Plagiarism :D
+'''
+
 import sys, os, io
 from PySide6.QtWidgets import *
 from PySide6.QtCore import Qt,QBuffer
