@@ -15,7 +15,7 @@
 import sys, os, io
 from PySide6.QtWidgets import *
 from PySide6.QtCore import Qt,QBuffer
-from PySide6.QtGui import QPixmap
+from PySide6.QtGui import QPixmap,QIcon
 from qtmodern.styles import dark
 from qtmodern.windows import ModernWindow
 from PIL import Image
@@ -136,8 +136,9 @@ class AppDemo(QWidget):
 
 if __name__=="__main__":
     app = QApplication(sys.argv)
-    #dark(app)
+    dark(app)
     demo = ModernWindow(AppDemo())
     demo.resize(360,400)
+    demo.setWindowIcon(QIcon('icon.png'))
     demo.show()
     sys.exit(app.exec_())
