@@ -101,7 +101,15 @@ class AppDemo(QWidget):
     def reset(self):
         for cb in self.cbArray:
             cb.setChecked(False)
-        # self.photoViewer = ImageLabel()
+        self.photoViewer.clear()
+        self.photoViewer.setText('\n\n Drop Image Here \n\n')
+        self.photoViewer.setStyleSheet('''
+            QLabel{
+                border: 4px dashed #aaa;
+                margin-bottom:10px;
+                margin-top:10px;
+            }
+        ''')
 
     def close(self):
         quit()
