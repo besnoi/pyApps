@@ -24,7 +24,9 @@ pip install requests
 Click here to [Download Manga Reader](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Manga%20Reader)
 
 ## Requirements
-- ttkthemes
+- bs4
+- PySide6
+- qtmodern
 - requests
 
 ## Caveats
