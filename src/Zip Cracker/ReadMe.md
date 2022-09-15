@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='icon.png'> Zip Cracker</h1>
 <p align='center'>
-    <img src='../../_img/wordlist_generator.PNG'><br>
+    <img src='../../_img/zip_cracker.PNG'><br>
     A simple Zip Cracker with zipfile & PyQT5
 </p>
 
