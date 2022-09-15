@@ -1,5 +1,5 @@
 '''
-    Camera with PySide6 / Neir
+    Camera with PyQt5 / Neir
 
     Part of 100 GUI Apps Challenge
     (https://github.com/besnoi/pyApps)
