@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='icon.png'> DDoS Tool</h1>
 <p align='center'>
-    <img src='../_img/ddos_tool.png'><br>
+    <img src='../../_img/ddos_tool.png'><br>
     DDoS Tool
 </p>
 
