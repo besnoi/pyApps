@@ -1,5 +1,5 @@
 
-<h1 align='center'> <img width=32 src='icon.png'> Sticky Notes</h1>
+<h1 align='center'> <img width=32 src='https://cdn-icons-png.flaticon.com/512/2829/2829877.png'> Sticky Notes</h1>
 <p align='center'>
     <img src='../../_img/sticky_notes.PNG'><br>
     A Simple Sticky Notes App with PySide6
