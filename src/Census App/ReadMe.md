@@ -14,6 +14,7 @@ Select the Region and year and the app plots the decadal population growth or po
 Install the [requirements](#requirements)
 ```bash
 pip install PySide6
+pip install qtmodern
 ```
 
 ## Download
@@ -22,6 +23,7 @@ Click here to [Download Census App](https://downgit.github.io/#/home?url=https:/
 
 ## Requirements
 - PySide6
+- qtmodern
 
 ## License
 
