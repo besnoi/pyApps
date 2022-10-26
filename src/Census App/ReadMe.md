@@ -7,7 +7,7 @@
 
 ## Synopsis
 
-Select the Region and year and the app plots the decadal population growth or population proportion with Bar Graphs and Pie Charts. Currently only Assam districts are supported
+Select the Region and year and the app plots the decadal population growth or population proportion with Bar Graphs and Pie Charts.
 
 ## Installation
 
