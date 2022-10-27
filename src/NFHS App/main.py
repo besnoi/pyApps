@@ -1,6 +1,6 @@
 import sys
 
-from api import NHFSReport
+from api import NFHSReport
 from PySide6.QtCore import QSize, Qt, QUrl
 from PySide6.QtWidgets import *
 from PySide6.QtWebEngineWidgets import *
@@ -9,7 +9,7 @@ from qtmodern.styles import dark
 from qtmodern.windows import ModernWindow
 import qtvscodestyle as qtvsc
 
-report = NHFSReport()
+report = NFHSReport()
 CATEGORIES = report.getIndicators()
 
 class MainWindow(QWidget):
@@ -27,7 +27,6 @@ class MainWindow(QWidget):
         self.typology.addItems(['Urban','Rural','Total'])
         for i in CATEGORIES:
             self.category.addItem(i)
-        self.indicator.addItem('Women age 15 years and above who consume alcohol (%)')
         self.layout.addWidget(QLabel('Survey Year',self),0,0,1,1)
         self.layout.addWidget(self.year,0,1,1,1)
         self.layout.addWidget(QLabel('Select Typology',self),0,2,1,1)
@@ -50,7 +49,7 @@ class MainWindow(QWidget):
         self.indicator.clear()
         for i in indicators:
             self.indicator.addItem(i)
-        self.onIndicatorSelect()
+        # self.onIndicatorSelect()
 
     def onIndicatorSelect(self):
         year,category,indicator,typology = self.year.currentText(),self.category.currentText(),self.indicator.currentText(),self.typology.currentText()
