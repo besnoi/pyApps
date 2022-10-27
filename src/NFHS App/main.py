@@ -1,3 +1,17 @@
+'''
+    NFHS APP with PySide6 / Neir
+    
+    Part of 100 GUI Apps Challenge
+    (https://github.com/besnoi/pyApps)
+
+    Challenge Rules :
+        1. App must be useful
+        2. App must be beautiful
+        3. App must be short (<500 LOC)
+    
+    And lastly no Plagiarism :D
+'''
+
 import sys
 
 from api import NFHSReport
@@ -26,7 +40,7 @@ class MainWindow(QWidget):
         self.year.addItem('NFHS-5 (2019-21)')
         self.typology.addItems(['Urban','Rural','Total'])
         for i in CATEGORIES:
-            self.category.addItem(i)
+            self.category.addItem(i.replace('`','/'))
         self.layout.addWidget(QLabel('Survey Year',self),0,0,1,1)
         self.layout.addWidget(self.year,0,1,1,1)
         self.layout.addWidget(QLabel('Select Typology',self),0,2,1,1)
@@ -48,8 +62,8 @@ class MainWindow(QWidget):
         indicators = CATEGORIES[self.category.currentText()]
         self.indicator.clear()
         for i in indicators:
-            self.indicator.addItem(i)
-        # self.onIndicatorSelect()
+            self.indicator.addItem(i.replace('`','/'))
+        self.onIndicatorSelect()
 
     def onIndicatorSelect(self):
         year,category,indicator,typology = self.year.currentText(),self.category.currentText(),self.indicator.currentText(),self.typology.currentText()
@@ -70,7 +84,6 @@ class MainWindow(QWidget):
         html = ("<style>body{overflow-y:hidden}#container{height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto;}.loading{margin-top: 10em; text-align: center; color: gray;}</style><script src='https://code.highcharts.com/maps/highmaps.js'></script><div id='container'></div><script>(async ()=>{const topology=await fetch( 'https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.topo.json' ).then(response=> response.json()); const data="+
         str(data)+
         "; Highcharts.mapChart('container',{chart:{map: topology}, title:{text: '"+indicator+"'}, subtitle:{text: 'India: "+str(data[0][1])+"',align: 'center',verticalAlign: 'bottom'}, legend:{layout: 'vertical', align: 'right', verticalAlign: 'middle'},mapNavigation:{enabled: true, buttonOptions:{verticalAlign: 'bottom'}}, colorAxis:{align: 'right',verticalMiddle:'middle',min: 0 "+(isNegative and ", minColor: '#efecf3', maxColor: '#ff0000'" or "")+"}, series: [{data: data, name: '"+number+"', states:{hover:{color: '#BADA55'}}, dataLabels:{enabled: false, format: '{point.name}'}}]});})();</script>")
-        print(html)
         self.browser.setHtml(html)
 
 
