@@ -5,12 +5,13 @@ import requests
 class Census:
     def __init__(self) -> None:
         self.cache={}
-        self.data={}
         pass
 
-    def getAllData(self)->None: # Not Used
-        URL = "https://statsindia.herokuapp.com/population_by_religion/api/get/all"
-        self.data=requests.get(url = URL).json()
+    def getChoropleth(self,year,state,religion,sex)->None: # Not Used
+        if state not in self.cache:
+            URL = f"https://statsindia.herokuapp.com/population_by_religion/api/get/choropleth/{year}/{state}/{religion}/{sex}"
+            self.cache[year+state+religion+sex]=requests.get(url = URL).json()
+        return self.cache[year+state+religion+sex]
 
     def getData(self,state,district) -> None:
         if state+district not in self.cache:
@@ -38,9 +39,6 @@ class Census:
             category = category.lower()
             return [data[f'{category}_males']+data[f'{category}_females'],data[f'{category}_males'],data[f'{category}_females']]
     
-
-
-
     def getYearList(self,state,district) -> None:
         print('Getting Year List...')
         years = []
@@ -54,6 +52,3 @@ class Census:
         print('Getting Region List...')
         URL = f"https://statsindia.herokuapp.com/population_by_religion/api/get/regions"
         return requests.get(url = URL).json()
-
-
-    
