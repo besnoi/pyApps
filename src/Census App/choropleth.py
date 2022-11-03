@@ -120,10 +120,12 @@ class MainWindow(QWidget):
         else:
             mapURL = 'https://besnoi.github.io/maps/json/'+state.lower()+'.json'
 
-        if int(year)<2000 and state in ['Bihar','Madhya Pradesh','Uttar Pradesh']:
+        if int(year)<2001 and state in ['Bihar','Madhya Pradesh','Uttar Pradesh']:
             mapURL = f'https://besnoi.github.io/maps/json/{state.lower()}-1999.json'
-        elif int(year)<2011 and state in ['Bihar','Madhya Pradesh']:
+        elif int(year)<2011 and state in ['Bihar','Madhya Pradesh','Uttar Pradesh']:
             mapURL = f'https://besnoi.github.io/maps/json/{state.lower()}-2001.json'
+        elif int(year)<2022 and state in ['Uttar Pradesh']:
+            mapURL = f'https://besnoi.github.io/maps/json/{state.lower()}-2011.json'
 
         print(data)
             
