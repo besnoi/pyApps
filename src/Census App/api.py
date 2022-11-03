@@ -8,10 +8,16 @@ class Census:
         pass
 
     def getChoropleth(self,year,state,religion,sex)->None: # Not Used
-        if state not in self.cache:
-            URL = f"https://statsindia.herokuapp.com/population_by_religion/api/get/choropleth/{year}/{state}/{religion}/{sex}"
-            self.cache[year+state+religion+sex]=requests.get(url = URL).json()
-        return self.cache[year+state+religion+sex]
+        states = []
+        if year+state not in self.cache:
+            URL = f"https://statsindia.herokuapp.com/population_by_religion/api/get/choropleth/{state}/{year}"
+            print(URL)
+            self.cache[year+state]=requests.get(url = URL).json()
+        states.append([state,self.cache[year+state]['State'][f'{religion}_{sex}']])
+        for i in self.cache[year+state]:
+            if i!='State':
+                states.append([i,self.cache[year+state][i][f'{religion}_{sex}']])
+        return states
 
     def getData(self,state,district) -> None:
         if state+district not in self.cache:
@@ -48,7 +54,12 @@ class Census:
         return years
     
     # states : [district] format
-    def getRegionList(self) -> None:
+    def getRegionList(self,year='') -> None:
         print('Getting Region List...')
-        URL = f"https://statsindia.herokuapp.com/population_by_religion/api/get/regions"
-        return requests.get(url = URL).json()
+        if f'region{year}' not in self.cache:
+            URL = f"https://statsindia.herokuapp.com/population_by_religion/api/get/regions/{year}"
+            self.cache[f'region{year}']=requests.get(url = URL).json()
+        return self.cache[f'region{year}']
+
+# print(Census().getChoropleth('2011','Jammu and Kashmir','hindu','males'))
+    
