@@ -1,5 +1,5 @@
 '''
-    Camera with PyQt5 / Neir
+    Camera with PyQt5 / Neir (TODO)
 
     Part of 100 GUI Apps Challenge
     (https://github.com/besnoi/pyApps)
