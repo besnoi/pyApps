@@ -26,12 +26,13 @@ pip install PySide6
 Click here to [Download Face Compare](https://downgit.github.io/#/home?url=https://github.com/besnoi/pyapps/tree/main/src/Face%20Compare)
 
 ## Requirements
--imutils
--wget
--numpy
--qtmodern
--facepplib
--PySide6
+
+- imutils
+- wget
+- numpy
+- qtmodern
+- facepplib
+- PySide6
 
 ## License
 
