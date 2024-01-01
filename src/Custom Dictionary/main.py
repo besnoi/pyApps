@@ -1,5 +1,5 @@
 '''
-    Dictionary with Tkinter / Neir
+    Custom Dictionary with PySide6 / Neir
 
     Part of 100 GUI Apps Challenge
     (https://github.com/besnoi/pyApps)
