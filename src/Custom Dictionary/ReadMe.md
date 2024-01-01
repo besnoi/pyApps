@@ -7,9 +7,7 @@
 
 ## Synopsis
 
-Select the currencies to convert to and from, enter the amount and the result will be displayed synchronously. The only buttons are to flip the currencies and reset the inputs to their default values
-
-What's so cool about this app is that it works both online and offline. If you're online it will use the fixer API to get the latest forex rates, otherwise it will use the rates since the last time you were online.
+Unlike the [English dictionary](https://github.com/besnoi/pyapps/tree/main/src/Dictionary), this one allows the user to insert his own words definition and examples. So you can make it to English-Japanese, English-Javanese or anything depending on your utility
 
 ## Installation
 
